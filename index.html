@@ -325,7 +325,7 @@
         <address class="adress">
             <ul class="list address-text">
                 <li class="list-adress"><a class="link ithem-adress" href="https://goo.gl/maps/Gu5Dw9EAoeBzcQZ39">г.
-                        Киев, пр-т Леси Украинки, 26</a></li>
+                        Киев, пр-т Леси Украинки,26</a></li>
                 <li class="list-adress"><a class="link nav-adress-ithem"
                         href="meilto:info@example.com">info@example.com</a></li>
                 <li class="list-adress"><a class="link nav-adress-ithem" href="tel:+380991111111">+38 099 111 11
@@ -367,12 +367,19 @@
             </a>
         </li>  
             </div>
-
+            <div class="conteier-right-footer">
             <div class="footer-right">
                 <p class="head-list join">Подпишитесь на рассылку</p>
-                <label for="mail">
-                    <input type="mail" id="mail" name="mail" placeholder="E-mail">
+                <label for="mail-fotter">
+                    <input class="input-mail" type="mail-fotter" id="mail-fotter" name="mail-fotter" placeholder="E-mail">
                 </label>
+            </div>
+
+            <button data-modal-open class="button" type="submit">Подписаться
+                <svg class="icon-send" height="24" width="24">
+                    <use href="imeges/iconsvg.svg#icon-icon-send"></use>
+                </svg>
+            </button>
             </div>
 
     </div>
@@ -400,12 +407,65 @@
                 eveniet deserunt, dicta similique consequuntur a consectetur tempora
                 dolorem eius repudiandae iusto temporibus totam omnis! -->
 
-        <button class="bnt-close" data-modal-close type="button">
-        </button>
+          
+            <svg data-modal-close  class="icon-close" width="30" height="30">
+            <use href="imeges/iconsvg.svg#icon-closeX"></use>
+        </svg>
+        
 
     </div>
 
 </div>
+
+<div data-modal class="backdrop  ">
+    <div class="modal" role="group">
+        <svg data-modal-close class="icon-close" width="30" height="30">
+            <use href="imeges/iconsvg.svg#icon-closeX"></use>
+        </svg>
+        <p class="text-form-head">Оставьте свои данные, мы вам перезвоним</p>
+        <div class="form-conteiner">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name">
+            <svg class="icon-person">
+                <use href="imeges/iconsvg.svg#icon-person-black"></use>
+            </svg>
+        </div>
+
+        <div class="form-conteiner">
+            <label for="tel">Телефон</label>
+            <input  type="text" name="tel" id="tel">
+            <svg class="icon-person">
+                <use href="imeges/iconsvg.svg#icon-phone-black"></use>
+            </svg>
+        </div>
+
+        <div class="form-conteiner">
+            <label for="mail">Почта</label>
+            <input type="text" name="mail" id="mail">
+            <svg class="icon-person">
+                <use href="imeges/iconsvg.svg#icon-email-black"></use>
+            </svg>
+        </div>
+
+        <div class="form-conteiner">
+            <label for="comment">Комментарий</label>
+            <textarea type="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+        </div>
+
+        <div class="chekbox">
+            <input type="checkbox" name="topic" id="topic" width="16" height="15">
+            <label for="topic">Соглашаюсь с рассылкой и принимаю <a class="link-doc" href="">Условия договора</a></label>
+        </div>
+        <div class="btn-conteiner">
+            <button class="button" type="submit">Отправить</button></div>
+
+        
+
+    </div>
+
+</div>
+
+
     
 
 
@@ -413,3 +473,7 @@
     
 </body>
 </html>
+
+<svg class="icon-form" width="18" height="18">
+    <use href="imeges/iconsvg.svg#icon-phone-black"></use>
+</svg>
