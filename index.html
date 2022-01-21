@@ -387,37 +387,10 @@
 </div>
 </footer>
 
+
+
 <div data-modal class="backdrop is-hidden ">
-    <div class="modal">
-        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laboriosam
-                veniam sit accusantium porro dolorum, similique cumque unde atque eaque
-                eos aliquid necessitatibus dolor temporibus pariatur voluptas recusandae
-                eligendi voluptatem qui facilis maiores alias beatae. Rem aliquid
-                consequuntur possimus libero fugit itaque odit ad, officia quisquam.
-                Perferendis corporis mollitia earum, sequi sint officiis nobis, numquam
-                corrupti ipsum expedita, tempore quis maiores dicta quia beatae?
-                Necessitatibus culpa, deserunt ea dignissimos sequi exercitationem facere
-                non dolores distinctio, reprehenderit iure eveniet veritatis accusamus
-                corrupti quod reiciendis magnam neque earum, fugit obcaecati praesentium
-                aperiam doloribus veniam modi! Reiciendis vel voluptate qui autem pariatur
-                eligendi, temporibus, consequatur excepturi illum natus iusto culpa
-                beatae, nostrum corporis provident nemo soluta quas minima! Fugit sapiente
-                obcaecati impedit asperiores reiciendis deleniti repudiandae quidem vitae,
-                repellat provident. Nam ratione nihil rerum quos eaque itaque autem
-                eveniet deserunt, dicta similique consequuntur a consectetur tempora
-                dolorem eius repudiandae iusto temporibus totam omnis! -->
-
-          
-            <svg data-modal-close  class="icon-close" width="30" height="30">
-            <use href="imeges/iconsvg.svg#icon-closeX"></use>
-        </svg>
-        
-
-    </div>
-
-</div>
-
-<div data-modal class="backdrop  ">
+    <form action="#">
     <div class="modal" role="group">
         <svg data-modal-close class="icon-close" width="30" height="30">
             <use href="imeges/iconsvg.svg#icon-closeX"></use>
@@ -425,7 +398,7 @@
         <p class="text-form-head">Оставьте свои данные, мы вам перезвоним</p>
         <div class="form-conteiner">
             <label for="name">Имя</label>
-            <input type="text" name="name" id="name">
+            <input class="input-form" type="text" name="name" id="name" required>
             <svg class="icon-person">
                 <use href="imeges/iconsvg.svg#icon-person-black"></use>
             </svg>
@@ -433,7 +406,7 @@
 
         <div class="form-conteiner">
             <label for="tel">Телефон</label>
-            <input  type="text" name="tel" id="tel">
+            <input  class="input-form" type="text" name="tel" id="tel" placeholder="  " required minlength="8">
             <svg class="icon-person">
                 <use href="imeges/iconsvg.svg#icon-phone-black"></use>
             </svg>
@@ -441,7 +414,7 @@
 
         <div class="form-conteiner">
             <label for="mail">Почта</label>
-            <input type="text" name="mail" id="mail">
+            <input class="input-form" type="text" name="mail" id="mail" required minlength="6">
             <svg class="icon-person">
                 <use href="imeges/iconsvg.svg#icon-email-black"></use>
             </svg>
@@ -453,8 +426,14 @@
         </div>
 
         <div class="chekbox">
-            <input type="checkbox" name="topic" id="topic" width="16" height="15">
-            <label for="topic">Соглашаюсь с рассылкой и принимаю <a class="link-doc" href="">Условия договора</a></label>
+            <input class="visually-hidden check-box-input" type="checkbox" name="topic" id="topic" width="16" height="15">
+            <label class="lable-checkbox" for="topic">
+                <span>
+                    <svg class="icon-check" height="16" wigth="15">
+                        <use href="imeges/iconsvg.svg#icon-check"></use>
+                    </svg>
+
+            </span>Соглашаюсь с рассылкой и принимаю<a class="link-doc link"  href="">  Условия договора</a></label>
         </div>
         <div class="btn-conteiner">
             <button class="button" type="submit">Отправить</button></div>
@@ -462,6 +441,7 @@
         
 
     </div>
+    </form>
 
 </div>
 
